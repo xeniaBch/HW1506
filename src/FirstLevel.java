@@ -14,9 +14,6 @@ public class FirstLevel {
         int n2 = scanner.nextInt();
         System.out.println("Sum of numbers that divisible by 3 is " + sumBetween(n1, n2));
 
-
-
-
         System.out.println("Task 3");
         sumAllNumbers();
 
@@ -26,9 +23,6 @@ public class FirstLevel {
         System.out.println("Enter second year");
         int year2 = scanner.nextInt();
         System.out.println(countLeapYear(year1, year2));
-
-
-
     }
 
     private static void countdownFor() {
@@ -89,7 +83,6 @@ public class FirstLevel {
             if ((i % 4 == 0) && (i % 100 != 0) || (i % 400 == 0)) {
                 count++;
             }
-
         }
         return count;
     }
