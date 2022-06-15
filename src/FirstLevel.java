@@ -38,7 +38,7 @@ public class FirstLevel {
         int i = 5;
         while (i >= 1) {
             System.out.println(i);
-            i -= 1;
+            i--;
         }
         System.out.println("Start");
     }
