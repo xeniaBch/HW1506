@@ -12,7 +12,13 @@ public class FirstLevel {
         int n1 = scanner.nextInt();
         System.out.println("Enter second number");
         int n2 = scanner.nextInt();
-        System.out.println("Sum of numbers that divisible by 3 is " + sumBetween(n1, n2));
+        if (n1 > n2) {
+            System.out.println("Sum of numbers that divisible by 3 is " + sumBetween(n1, n2));
+        } else {
+            System.out.println("Sum of numbers that divisible by 3 is " + sumBetween(n2, n1));
+        }
+
+
 
         System.out.println("Task 3");
         sumAllNumbers();
@@ -22,7 +28,12 @@ public class FirstLevel {
         int year1 = scanner.nextInt();
         System.out.println("Enter second year");
         int year2 = scanner.nextInt();
-        System.out.println(countLeapYear(year1, year2));
+        if (year1 < year2) {
+            System.out.println(countLeapYear(year1, year2));
+        } else {
+            System.out.println(countLeapYear(year2, year1));
+        }
+
 
 
     }
@@ -45,7 +56,7 @@ public class FirstLevel {
 
     private static int sumBetween(int n1, int n2) {
         int sum = 0;
-        for (int i = n1; i >= n2; i--) {
+        for (int i = n2; i <= n1; i++) {
             if (i % 3 == 0) {
                 sum += i;
             }
@@ -64,7 +75,7 @@ public class FirstLevel {
 
         } while (n != 0);
 
-        System.out.println(sum);
+        System.out.println("Sum of entered numbers is " + sum);
 
     }
 
